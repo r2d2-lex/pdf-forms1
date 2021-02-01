@@ -8,16 +8,6 @@ import os.path
 import sys
 from PIL import Image
 
-'''
-    replace all the constants (the one in caps) with your own lists
-'''
-
-FORM_KEYS = {
-    'Background': 'string',
-    'PlayerName': 'string',
-    'CharacterName': 'string',
-}
-
 
 class ProcessPdf:
 
@@ -42,14 +32,14 @@ class ProcessPdf:
                 #if annotation['/Subtype'] == ['/Widget']:
                 if annotation['/T']:
                     key = annotation['/T'][1:-1]
-                    print('Key: {}'.format(key))
+                    print('Key: "{}"'.format(key))
                     if re.search(r'.-[0-9]+', key):
                         key = key[:-2]
 
                     if key in data:
                         print('Found Key: {}'.format(key))
                         annotation.update(
-                            pdfrw.PdfDict(V=self.encode_pdf_string(data[key], FORM_KEYS[key]))
+                            pdfrw.PdfDict(V=self.encode_pdf_string(data[key], 'string'))
                         )
                     annotation.update(pdfrw.PdfDict(Ff=1))
 
@@ -62,7 +52,8 @@ class ProcessPdf:
     def encode_pdf_string(self, value, type):
         if type == 'string':
             if value:
-                return pdfrw.objects.pdfstring.PdfString.encode(value.upper())
+                # return pdfrw.objects.pdfstring.PdfString.encode(value)
+                return pdfrw.objects.pdfstring.PdfString.encode(value)
             else:
                 return pdfrw.objects.pdfstring.PdfString.encode('')
         elif type == 'checkbox':
