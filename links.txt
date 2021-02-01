@@ -1,0 +1,10 @@
+https://github.com/vivsvaan/filling_editable_pdf_python/blob/master/pdf_processing.py
+https://github.com/vivsvaan/filling_editable_pdf_python
+https://medium.com/@vivsvaan/filling-editable-pdf-in-python-76712c3ce99
+https://medium.com/@zwinny/filling-pdf-forms-in-python-the-right-way-eb9592e03dba
+https://yoongkang.com/blog/pdf-forms-with-python/
+http://www.blog.pythonlibrary.org/2018/05/22/filling-pdf-forms-with-python/
+https://stackoverflow.com/questions/58898542/update-a-fillable-pdf-using-pypdf2
+https://coderoad.ru/55187651/Python-Django-PDF-%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%BF%D0%BE%D0%BB%D0%B5%D0%B9-%D1%84%D0%BE%D1%80%D0%BC%D1%8B
+https://askdev.ru/q/kak-izvlech-polya-pdf-iz-zapolnennoy-formy-v-python-96149/
+https://stackoverflow.com/questions/52448560/how-to-fill-pdf-forms-using-python
